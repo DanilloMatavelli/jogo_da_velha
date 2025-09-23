@@ -1,6 +1,7 @@
 import styles from "./Board.module.css"
-import TaskItem from "../Square"
-import TaskItem from "/utils/calculateWinner.js"
+import React from 'react';
+import Square from "../Square"
+import calculateWinner from "../../utils/calculateWinner";
 
 export default function Board({ xIsNext, squares, onPlay }) {
     function handleClick(i) {

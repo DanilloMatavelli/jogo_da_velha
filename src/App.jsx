@@ -1,26 +1,20 @@
-import { useState } from 'react'
 import './App.css'
-import Square from './components/Square'
-import Board from './components/Board'
 import Game from './components/Game'
 
-function App() {
+export default function App(){
 
-  return (
+  return(
     <>
-    <div>
-      <div>
-        <Square/>
-        <Board/>
-      </div>
-
-      <div>
-        <Game/>
-      </div>
-    </div>
+    <div className="app">
+      <h1>Jogo da Velha</h1>
       
+    </div>
+
+    <div>
+
+      <Game />
+
+    </div>
     </>
   )
 }
-
-export default App
