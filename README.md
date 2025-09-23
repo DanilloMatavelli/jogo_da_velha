@@ -1,16 +1,30 @@
-# React + Vite
+Objetivo do projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+O objetivo é recriar o Jogo da Velha usando React, praticando:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Componentização (dividir o código em componentes pequenos).
 
-## React Compiler
+Props e State (passagem de dados e controle do jogo).
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Reatividade (atualização do tabuleiro em tempo real).
 
-## Expanding the ESLint configuration
+Lógica de vitória (função calculateWinner).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Estrutura dos Componentes
+
+
+Como executar o jogo
+
+Clonar o repositorio abaixo, com o link:
+https://github.com/DanilloMatavelli/jogo_da_velha
+
+Executar o react com o comando: 
+npm i 
+
+Para rodar o jogo execute o comando:
+npm run dev 
+
+
+

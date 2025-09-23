@@ -1,20 +1,20 @@
 import './App.css'
 import Game from './components/Game'
 
-export default function App(){
+export default function App() {
 
-  return(
+  return (
     <>
-    <div className="app">
-      <h1>Jogo da Velha</h1>
-      
-    </div>
+  
 
-    <div>
+        <div className='container-esquerda'>
+          <Game/>
+        </div>
 
-      <Game />
+  
 
-    </div>
+
+
     </>
   )
 }

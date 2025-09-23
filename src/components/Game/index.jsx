@@ -35,9 +35,11 @@ export default function Game() {
     return (
       <div className="game">
         <div className="game-board">
+            <h1>Jogo Da Velha</h1>
           <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
         </div>
         <div className="game-info">
+            <h1>Historico</h1>
           <ol>{moves}</ol>
         </div>
       </div>
