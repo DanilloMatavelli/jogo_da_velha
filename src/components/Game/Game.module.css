@@ -6,7 +6,7 @@
   body {
     margin: 0;
     padding: 0;
-    background: #111;
+    background: black;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -31,11 +31,12 @@
   }
   
   .gameinfo {
-    background: #da1b1b;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 12px rgba(0,0,0,0.6);
-    min-width: 200px;
+    min-width: 500px;
+    min-height: 500px;
   }
   
   .game-info ol {

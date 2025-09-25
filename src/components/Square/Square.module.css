@@ -1,7 +1,7 @@
 .square {
   width: 60px;
   height: 60px;
-  background: #ec0e0e;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
   border: 2px solid #000;
   font-size: 24px;
   font-weight: bold;

@@ -1,18 +1,36 @@
 Objetivo do projeto
 
-
-O objetivo é recriar o Jogo da Velha usando React, praticando:
-
-Componentização (dividir o código em componentes pequenos).
-
-Props e State (passagem de dados e controle do jogo).
-
-Reatividade (atualização do tabuleiro em tempo real).
-
-Lógica de vitória (função calculateWinner).
+Este projeto tem como objetivo desenvolver um Jogo da Velha utilizando React.js.  
+O foco é aprender e praticar conceitos fundamentais do React, como:
+- Criação e composição de componentes funcionais;
+- Gerenciamento de estado com `useState`;
+- Passagem de props entre componentes;
+- Estruturação do código em componentes reutilizáveis.
 
 
 Estrutura dos Componentes
+
+- Game
+  Componente principal que gerencia o estado do jogo, incluindo:
+  - Histórico de jogadas;
+  - Controle de turnos;
+  - Reinício do jogo.
+
+- Board
+  Representa o tabuleiro.  
+  É responsável por:
+  - Renderizar os 9 quadrados (`Square`);
+  - Exibir o status do jogo (próximo jogador ou vencedor);
+  - Delegar a lógica de clique para atualização de jogadas.
+
+- Square
+  Representa cada célula do tabuleiro.  
+  É um botão que mostra:
+  - "X" ou "O" conforme o jogador;
+  - Um clique chama a função recebida via props para atualizar o estado no `Board`.
+
+- `utils/calculateWinner.js` 
+  Função utilitária que verifica se houve um vencedor ou empate.
 
 
 Como executar o jogo
