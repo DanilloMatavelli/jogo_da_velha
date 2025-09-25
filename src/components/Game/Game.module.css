@@ -27,10 +27,11 @@
     border-radius: 12px;
     box-shadow: 0 0 12px rgba(0,0,0,0.6);
     text-align: center;
+    margin-left: -100px;
   }
   
-  .game-info {
-    background: #1b1b1b;
+  .gameinfo {
+    background: #da1b1b;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 12px rgba(0,0,0,0.6);
