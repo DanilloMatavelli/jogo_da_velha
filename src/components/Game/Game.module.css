@@ -63,3 +63,26 @@
     background: #555;
   }
   
+  .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+
+  background: linear-gradient(270deg, #ff00bf, #ff2600, #ff1e1e, #2b3275);
+  background-size: 800% 800%;
+
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientShift 6s ease infinite;
+
+}
+
+/* 0% , 100% e 0% cria o efeito de movimento contínuo.
+O 50% no eixo Y (50%) mantém o gradiente centralizado verticalmente. */
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

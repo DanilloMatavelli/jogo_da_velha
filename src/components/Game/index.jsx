@@ -41,7 +41,7 @@ export default function Game() {
     return (
       <div className={styles.game}>
         <div className="game-board">
-            <h1>Jogo Da Velha</h1>
+            <h1 className={styles.title}>Jogo Da Velha</h1>
           <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
         </div>
         <div className={styles.gameinfo}>
