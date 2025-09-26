@@ -3,7 +3,13 @@ import React from 'react';
 import Square from "../Square"
 import calculateWinner from "../../utils/calculateWinner";
 
+
+// A função é responsável por atualizar o estado do tabuleiro quando o usuário clica em uma célula. Antes de atualizar, verifica se já existe um vencedor ou se a posição clicada já está ocupada.
+
+// A cada jogada, o componente verifica se existe um vencedor e exibe o status com o próximo jogador ou o ganhador da partida.
+
 export default function Board({ xIsNext, squares, onPlay }) {
+  
     function handleClick(i) {
       if (calculateWinner(squares) || squares[i]) {
         return;

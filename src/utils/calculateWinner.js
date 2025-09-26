@@ -1,3 +1,9 @@
+// A função percorre todas as combinações possíveis de vitória (linhas, colunas e diagonais).
+
+// Se encontrar três posições iguais (todas com X ou todas com O), retorna o vencedor correspondente.
+
+// Caso nenhuma condição seja atendida, retorna null, indicando que o jogo continua sem vencedor.
+
 export default function calculateWinner(squares) {
     const lines = [
       [0, 1, 2],

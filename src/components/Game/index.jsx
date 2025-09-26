@@ -7,16 +7,22 @@ export default function Game() {
     const [currentMove, setCurrentMove] = useState(0);
     const xIsNext = currentMove % 2 === 0;
     const currentSquares = history[currentMove];
+
+    // Controla o histórico do jogo. Ao receber o próximo estado do tabuleiro, cria uma nova lista de jogadas, descarta movimentos futuros e atualiza o estado atual para refletir a nova jogada.
   
     function handlePlay(nextSquares) {
       const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
       setHistory(nextHistory);
       setCurrentMove(nextHistory.length - 1);
     }
+
+    // Permite ao usuário voltar para qualquer jogada anterior do histórico, ajustando o movimento atual para o escolhido.
   
-    function jumpTo(nextMove) {
+    function jumpTo(nextMove) { 
       setCurrentMove(nextMove);
     }
+
+    // Gera dinamicamente uma lista de botões que permitem navegar entre os estados anteriores do tabuleiro.”
   
     const moves = history.map((squares, move) => {
       let description;
